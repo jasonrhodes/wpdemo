@@ -1,6 +1,6 @@
 <?php
 
-require dirname(__FILE__) . '/MetaBox.php';
+require_once dirname(__FILE__) . '/MetaBox.php';
 
 class CustomObject {
     
