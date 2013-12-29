@@ -163,7 +163,7 @@ class MetaBox {
                     $i = 1;
                     foreach ( $field['options'] as $opt ) {
                         if (!is_array($opt)) { 
-                            $opt_label = $opt_label = $opt; 
+                            $opt_value = $opt_label = $opt; 
                         } else {
                             $opt_label = $opt[0];
                             $opt_value = isset($opt[1]) ? $opt[1] : $opt_label;
