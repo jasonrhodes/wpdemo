@@ -28,6 +28,10 @@ $features->setup_metabox(array(
             'label' => 'Link URL'
         ),
         array(
+            'name' => 'bg_color',
+            'label' => 'Background Color'
+        ),
+        array(
             'name' => 'layout',
             'label' => 'Layout',
             'type' => 'radio',
