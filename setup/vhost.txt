@@ -1,0 +1,22 @@
+<VirtualHost *:80>
+  ServerName wpfs.dev
+  DocumentRoot /path/to/wpdemo/folder
+  <Directory /path/to/wpdemo/folder>
+    Options All
+    AllowOverride All
+    Order allow,deny
+    Allow from all
+  </Directory>
+</VirtualHost>
+
+<VirtualHost *:80>
+  ServerName sub.wpfs.dev
+  ServerAlias *.wpfs.dev
+  DocumentRoot /path/to/wpdemo/folder
+  <Directory /path/to/wpdemo/folder>
+    Options All
+    AllowOverride All
+    Order allow,deny
+    Allow from all
+  </Directory>
+</VirtualHost>
