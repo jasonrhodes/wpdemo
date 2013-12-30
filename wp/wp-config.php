@@ -78,7 +78,19 @@ define('WPLANG', '');
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
+
+
+/**
+ * Twig Setup
+ */
+require_once dirname(__DIR__) . '/lib/twig/lib/Twig/Autoloader.php';
+Twig_Autoloader::register();
+
+$twig_loader = new Twig_Loader_Filesystem(dirname(__DIR__) . '/templates');
+$twig = new Twig_Environment($twig_loader);
+
+
 
 /* That's all, stop editing! Happy blogging. */
 
